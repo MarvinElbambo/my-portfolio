@@ -9,6 +9,7 @@ export const WithFourColumnsCentered: Decorator = (Story) => {
     <Row
       className={classNames(styles.decorator, styles.withFourColumnsCentered)}
     >
+      <Column width={{ laptop: 4 }} />
       <Column className={styles.column} width={{ laptop: 4 }}>
         <Story />
       </Column>
@@ -21,7 +22,8 @@ export const WithSixColumnsCentered: Decorator = (Story) => {
     <Row
       className={classNames(styles.decorator, styles.withSixColumnsCentered)}
     >
-      <Column className={styles.column} width={{ laptop: 4 }}>
+      <Column width={{ laptop: 3 }} />
+      <Column className={styles.column} width={{ laptop: 6 }}>
         <Story />
       </Column>
     </Row>

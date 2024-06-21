@@ -22,13 +22,25 @@
     gap: $spacing-sm;
   }
 
-  .component__email {
+  .component__email-link {
     @include context("light");
 
     background-color: $context-main;
     color: $context-contrast;
     padding: $spacing-xs;
     border-radius: $borderRadius-md;
+
+    @include breakpoint-up($breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  .component__email-button {
+    display: none;
+
+    @include breakpoint-up($breakpoint-tablet) {
+      display: inline-block;
+    }
   }
 
   .component__image {

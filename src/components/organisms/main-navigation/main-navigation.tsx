@@ -4,17 +4,10 @@ import Image from "@/components/atoms/image/image";
 import Typography from "@/components/atoms/typography/typography";
 import Button from "@/components/atoms/button/button";
 import Icon from "@/components/atoms/icon-svg/icon-svg";
-import { useWindowSize } from "usehooks-ts";
-import { useMemo } from "react";
 
 export interface MainNavigationProps {}
 
 const MainNavigation = ({}: MainNavigationProps) => {
-  const { width } = useWindowSize();
-  const isTablet = useMemo(() => {
-    return width >= parseInt(styles["breakpoint-tablet"] ?? 768);
-  }, [width]);
-
   return (
     <nav className={styles["component"]}>
       <Container className={styles["component__container"]}>
@@ -33,23 +26,20 @@ const MainNavigation = ({}: MainNavigationProps) => {
           />
         </div>
 
-        {!isTablet && (
-          <a
-            className={styles["component__email"]}
-            href="mailto:marvinelbambo99@gmail.com"
-          >
-            <Icon name="Email" />
-          </a>
-        )}
+        <a
+          className={styles["component__email-link"]}
+          href="mailto:marvinelbambo99@gmail.com"
+        >
+          <Icon name="Email" />
+        </a>
 
-        {isTablet && (
-          <Button
-            type="link"
-            href="mailto:marvinelbambo99@gmail.com"
-            text="Contact me"
-            variant="light"
-          />
-        )}
+        <Button
+          className={styles["component__email-button"]}
+          type="link"
+          href="mailto:marvinelbambo99@gmail.com"
+          text="Contact me"
+          variant="light"
+        />
       </Container>
     </nav>
   );

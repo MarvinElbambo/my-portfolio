@@ -1,0 +1,32 @@
+@use "styles/setup" as *;
+
+.component {
+  display: block;
+  width: 100%;
+  border-radius: $borderRadius-lg;
+  overflow: hidden;
+
+  .component__image {
+    aspect-ratio: 16/9;
+  }
+
+  .component__content {
+    @include context("light");
+
+    background-color: $context-main;
+    color: $context-contrast;
+    padding: $spacing-sm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .component__link {
+    color: $context-contrast;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use "styles/setup" as *;
+
+.component {
+  display: block;
+
+  .component__title {
+    margin-bottom: $spacing-lg;
+  }
+}

@@ -5,50 +5,58 @@ import Column from "@/components/utilities/grid/column/column";
 import Image from "@/components/atoms/image/image";
 import Typography from "@/components/atoms/typography/typography";
 import Button from "@/components/atoms/button/button";
+import ModuleWrapper from "@/components/utilities/module-wrapper/module-wrapper";
 
 export interface HeroProps {}
 
 const Hero = ({}: HeroProps) => {
   return (
-    <Container className={styles["component"]}>
-      <Row>
-        <Column width={{ tablet: 6 }}>
-          <Image
-            className={styles["component__image"]}
-            src="/images/marvin-elbambo.jpg"
-            alt="Marvin Elbambo image"
-            fill={true}
-          />
-        </Column>
+    <ModuleWrapper className={styles["component"]}>
+      <Container>
+        <Row>
+          <Column width={{ tablet: 6 }}>
+            <Image
+              className={styles["component__image"]}
+              src="/images/marvin-elbambo.jpg"
+              alt="Marvin Elbambo image"
+              fill={true}
+              priority
+            />
+          </Column>
 
-        <Column
-          className={styles["component__right-column"]}
-          width={{ tablet: 6 }}
-        >
-          <Typography
-            tag="h1"
-            tagStyle="headlineXLarge"
-            text="Marvin Elbambo"
-          />
+          <Column
+            className={styles["component__right-column"]}
+            width={{ tablet: 6 }}
+          >
+            <Typography
+              tag="h1"
+              tagStyle="headlineXLarge"
+              text="Marvin Elbambo"
+            />
 
-          <Typography tag="h2" tagStyle="headlineMedium" text="Web Developer" />
+            <Typography
+              tag="h2"
+              tagStyle="headlineMedium"
+              text="Web Developer"
+            />
 
-          <Typography
-            className={styles["component__objective"]}
-            tag="p"
-            tagStyle="bodyMedium"
-            text="To continuously develop my skills in programming, as well as gaining knowledge and experience to render better performance, service and value to the company."
-          />
+            <Typography
+              className={styles["component__objective"]}
+              tag="p"
+              tagStyle="bodyMedium"
+              text="To continuously develop my skills in programming, as well as gaining knowledge and experience to render better performance, service and value to the company."
+            />
 
-          <Button
-            type="link"
-            href="mailto:marvinelbambo99@gmail.com"
-            text="Contact me"
-            variant="dark"
-          />
-        </Column>
-      </Row>
-    </Container>
+            <Button
+              type="link"
+              href="mailto:marvinelbambo99@gmail.com"
+              text="Contact me"
+              variant="dark"
+            />
+          </Column>
+        </Row>
+      </Container>
+    </ModuleWrapper>
   );
 };
 
