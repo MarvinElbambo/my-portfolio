@@ -5,3 +5,6 @@ export { default as ChevronRight } from "./chevron-right.svg";
 export { default as BurgerMenu } from "./burger-menu.svg";
 export { default as Close } from "./close.svg";
 export { default as Email } from "./email.svg";
+export { default as Facebook } from "./facebook.svg";
+export { default as Gmail } from "./gmail.svg";
+export { default as LinkedIn } from "./linkedin.svg";

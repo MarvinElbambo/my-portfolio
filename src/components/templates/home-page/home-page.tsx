@@ -4,6 +4,7 @@ import MainNavigation from "@/components/organisms/main-navigation/main-navigati
 import Hero from "@/components/organisms/hero/hero";
 import SkillList from "@/components/organisms/skill-list/skill-list";
 import ProjectList from "@/components/organisms/project-list/project-list";
+import Footer from "@/components/organisms/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,8 @@ const HomePage = () => {
         <SkillList />
 
         <ProjectList />
+
+        <Footer />
       </main>
     </>
   );

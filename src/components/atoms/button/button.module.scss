@@ -26,6 +26,10 @@
   &:hover {
     opacity: 0.8;
   }
+
+  & span {
+    vertical-align: middle;
+  }
 }
 
 @each $key, $context in $contexts {

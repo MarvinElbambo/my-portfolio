@@ -1,0 +1,35 @@
+@use "styles/setup" as *;
+
+.component {
+  @include context("dark");
+
+  background-color: $context-main;
+  color: $context-contrast;
+  display: block;
+  padding: $spacing-lg 0;
+
+  .component__column {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  .component__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  .component__link {
+    text-decoration: none;
+    color: $context-contrast;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .component__social-media {
+    display: flex;
+    gap: $spacing-xs;
+  }
+}
