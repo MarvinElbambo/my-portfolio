@@ -14,7 +14,7 @@
               (
                 (
                     100% -
-                      (#{$spacing-xs} * ((#{$grid-columns} / #{$span}) - 1))
+                      (#{$spacing-sm} * ((#{$grid-columns} / #{$span}) - 1))
                   ) /
                   (#{$grid-columns} / #{$span})
               )

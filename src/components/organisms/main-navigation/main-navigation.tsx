@@ -12,7 +12,7 @@ export interface MainNavigationProps {}
 const MainNavigation = ({}: MainNavigationProps) => {
   const { width } = useWindowSize();
   const isTablet = useMemo(() => {
-    return width <= parseInt(styles["breakpoint-tablet"] ?? 768);
+    return width >= parseInt(styles["breakpoint-tablet"] ?? 768);
   }, [width]);
 
   return (
@@ -33,14 +33,16 @@ const MainNavigation = ({}: MainNavigationProps) => {
           />
         </div>
 
-        {isTablet ? (
+        {!isTablet && (
           <a
             className={styles["component__email"]}
             href="mailto:marvinelbambo99@gmail.com"
           >
             <Icon name="Email" />
           </a>
-        ) : (
+        )}
+
+        {isTablet && (
           <Button
             type="link"
             href="mailto:marvinelbambo99@gmail.com"

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import MainNavigation from "@/components/organisms/main-navigation/main-navigation";
+import Hero from "@/components/organisms/hero/hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,8 @@ const HomePage = () => {
 
       <main className={inter.className}>
         <MainNavigation />
+
+        <Hero />
       </main>
     </>
   );
