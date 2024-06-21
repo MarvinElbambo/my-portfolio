@@ -1,0 +1,15 @@
+@use "styles/setup" as *;
+
+.component {
+  display: block;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.component--fill {
+  width: 100%;
+  aspect-ratio: 1;
+}

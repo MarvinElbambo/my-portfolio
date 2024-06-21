@@ -1,0 +1,45 @@
+@use "styles/setup" as *;
+
+.component {
+  display: block;
+
+  p {
+    @include typography-bodyMedium();
+    margin-top: $spacing-sm;
+    margin-bottom: $spacing-sm;
+  }
+
+  h1 {
+    @include typography-headlineXXLarge();
+  }
+
+  h2 {
+    @include typography-headlineXLarge();
+  }
+
+  h3 {
+    @include typography-headlineLarge();
+  }
+
+  h4 {
+    @include typography-headlineMedium();
+  }
+
+  h5 {
+    @include typography-headlineSmall();
+  }
+
+  h6 {
+    @include typography-headlineXSmall();
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: $spacing-sm;
+    margin-top: $spacing-md;
+  }
+}

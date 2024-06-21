@@ -1,0 +1,24 @@
+@use "styles/setup" as *;
+
+.component {
+  display: block;
+
+  .card {
+    border-radius: $borderRadius-lg;
+    box-shadow: $box-shadow;
+    padding: $spacing-sm;
+    flex-direction: column;
+    background-color: $context-main;
+    color: $context-contrast;
+  }
+
+  @each $key, $context in $contexts {
+    .card--#{$key} {
+      @include context($key);
+    }
+  }
+
+  .card__name {
+    margin-bottom: $spacing-md;
+  }
+}

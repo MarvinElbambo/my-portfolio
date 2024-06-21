@@ -1,0 +1,39 @@
+@use "styles/variables/palette" as *;
+
+:root {
+  // base
+  --context-main: #{$palette-primary};
+  --context-contrast: #{$palette-white};
+
+  // primary
+  --context-primary-main: #{$palette-primary};
+  --context-primary-contrast: #{$palette-white};
+
+  // secondary
+  --context-secondary-main: #{$palette-secondary};
+  --context-secondary-contrast: #{$palette-white};
+
+  // success
+  --context-success-main: #{$palette-success};
+  --context-success-contrast: #{$palette-white};
+
+  // danger
+  --context-danger-main: #{$palette-danger};
+  --context-danger-contrast: #{$palette-white};
+
+  // warning
+  --context-warning-main: #{$palette-warning};
+  --context-warning-contrast: #{$palette-black};
+
+  // info
+  --context-info-main: #{$palette-info};
+  --context-info-contrast: #{$palette-black};
+
+  // light
+  --context-light-main: #{$palette-light};
+  --context-light-contrast: #{$palette-black};
+
+  // dark
+  --context-dark-main: #{$palette-dark};
+  --context-dark-contrast: #{$palette-white};
+}

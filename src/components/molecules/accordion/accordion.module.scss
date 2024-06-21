@@ -1,0 +1,32 @@
+@use "styles/setup" as *;
+
+.component {
+  display: block;
+  width: 100%;
+
+  .component__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: $borderWidth-sm solid $palette-secondary;
+    border-bottom: $borderWidth-sm solid $palette-secondary;
+  }
+
+  .header__text {
+    flex-grow: 1;
+  }
+
+  .component__content {
+    display: none;
+  }
+}
+
+.component--open {
+  .header__icon {
+    transform: scaleY(-1);
+  }
+
+  .component__content {
+    display: block;
+  }
+}

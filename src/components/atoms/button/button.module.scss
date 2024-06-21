@@ -1,0 +1,35 @@
+@use "styles/setup" as *;
+
+.component {
+  @include context("primary");
+  @include typography-bodyMedium();
+
+  background-color: $context-main;
+  color: $context-contrast;
+  padding: $spacing-xs $spacing-md;
+  transition: $speed-normal $easing-base;
+  transition-property: background-color, color;
+  text-decoration: none;
+  display: flex;
+  height: $button-height-small;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  border: $borderWidth-sm solid $context-main;
+  border-radius: $borderRadius-lg;
+
+  @include breakpoint-up($breakpoint-tablet) {
+    height: $button-height-large;
+  }
+
+  &:hover {
+    background-color: $context-contrast;
+    color: $context-main;
+  }
+}
+
+@each $key, $context in $contexts {
+  .component--#{$key} {
+    @include context($key);
+  }
+}

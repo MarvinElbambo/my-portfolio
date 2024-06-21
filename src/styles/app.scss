@@ -1,0 +1,23 @@
+@use "styles/themes/root" as *;
+@use "styles/setup" as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  @include context("light");
+
+  background-color: $context-main;
+  color: $context-contrast;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  margin-left: rem(16);
+  margin-right: rem(16);
+}

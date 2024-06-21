@@ -1,0 +1,10 @@
+@use "styles/setup" as *;
+
+.decorator {
+  min-height: 100vh;
+
+  .column {
+    justify-content: center;
+    align-items: center;
+  }
+}

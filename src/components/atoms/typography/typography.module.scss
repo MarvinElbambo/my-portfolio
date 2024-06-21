@@ -1,0 +1,57 @@
+@use "styles/setup" as *;
+
+.component {
+  @include typography-bodyMedium();
+}
+
+.component--bodySmall {
+  @include typography-bodySmall();
+}
+
+.component--bodyMedium {
+  @include typography-bodyMedium();
+}
+
+.component--bodyLarge {
+  @include typography-bodyLarge();
+}
+
+.component--headlineXSmall {
+  @include typography-headlineXSmall();
+}
+
+.component--headlineSmall {
+  @include typography-headlineSmall();
+}
+
+.component--headlineMedium {
+  @include typography-headlineMedium();
+}
+
+.component--headlineLarge {
+  @include typography-headlineLarge();
+}
+
+.component--headlineXLarge {
+  @include typography-headlineXLarge();
+}
+
+.component--headlineXXLarge {
+  @include typography-headlineXXLarge();
+}
+
+.component--light {
+  font-weight: $fontWeight-light;
+}
+
+.component--regular {
+  font-weight: $fontWeight-regular;
+}
+
+.component--medium {
+  font-weight: $fontWeight-medium;
+}
+
+.component--bold {
+  font-weight: $fontWeight-bold;
+}
