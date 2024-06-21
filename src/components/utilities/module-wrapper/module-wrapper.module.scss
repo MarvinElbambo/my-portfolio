@@ -1,5 +1,4 @@
 @use "styles/setup" as *;
-@use "sass:map";
 
 .component {
   @include context("light");

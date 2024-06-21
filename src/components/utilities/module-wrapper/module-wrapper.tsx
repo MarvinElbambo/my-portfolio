@@ -22,7 +22,7 @@ const ModuleWrapper = ({
   variant,
 }: ModuleWrapperProps) => {
   return (
-    <div
+    <section
       className={classNames(
         styles["component"],
         variant && styles[`component--${variant}`],
@@ -30,7 +30,7 @@ const ModuleWrapper = ({
       )}
     >
       {children}
-    </div>
+    </section>
   );
 };
 

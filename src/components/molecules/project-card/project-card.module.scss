@@ -1,0 +1,87 @@
+@use "styles/setup" as *;
+
+.component {
+  @include context("light");
+
+  background-color: $context-main;
+  color: $context-contrast;
+  border-radius: $borderRadius-lg;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+
+  .component__iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+
+    @include breakpoint-up($breakpoint-tablet) {
+      aspect-ratio: 1;
+    }
+  }
+
+  .component__column-spacer {
+    display: none;
+    order: 2;
+
+    @include breakpoint-up($breakpoint-tablet) {
+      display: block;
+    }
+  }
+
+  .component__column-right {
+    padding: $spacing-sm;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    @include breakpoint-up($breakpoint-tablet) {
+      justify-content: center;
+    }
+  }
+
+  .component__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+    row-gap: $spacing-xs;
+    align-items: center;
+  }
+
+  .component__badge {
+    @include context("secondary");
+
+    background-color: $context-main;
+    color: $context-contrast;
+    border-radius: $borderRadius-lg;
+    padding: rem(4) $spacing-xs;
+  }
+}
+
+.component__text-right {
+  @include breakpoint-up($breakpoint-tablet) {
+    .component__column-left {
+      order: 1;
+    }
+
+    .component__column-right {
+      order: 3;
+    }
+  }
+}
+
+.component__text-left {
+  @include breakpoint-up($breakpoint-tablet) {
+    .component__column-left {
+      order: 3;
+    }
+
+    .component__column-right {
+      order: 1;
+    }
+  }
+}
+
+@each $key, $context in $contexts {
+  .component--#{$key} {
+    @include context($key);
+  }
+}
