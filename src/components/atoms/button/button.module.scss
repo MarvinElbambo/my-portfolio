@@ -16,15 +16,15 @@
   align-items: center;
   justify-content: center;
   border: $borderWidth-sm solid $context-main;
-  border-radius: $borderRadius-lg;
+  border-radius: $borderRadius-md;
+  text-align: center;
 
   @include breakpoint-up($breakpoint-tablet) {
     height: $button-height-large;
   }
 
   &:hover {
-    background-color: $context-contrast;
-    color: $context-main;
+    opacity: 0.8;
   }
 }
 

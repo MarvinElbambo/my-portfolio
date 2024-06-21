@@ -34,7 +34,10 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   if (props.type === "link") {
-    const isExternal = props.href?.startsWith("http") ? true : false;
+    const isExternal =
+      props.href?.startsWith("http") || props.href?.startsWith("mailto")
+        ? true
+        : false;
 
     if (isExternal) {
       return (

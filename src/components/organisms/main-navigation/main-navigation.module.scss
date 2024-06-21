@@ -1,0 +1,43 @@
+@use "styles/setup" as *;
+
+.component {
+  @include context("dark");
+
+  background-color: $context-main;
+  color: $context-contrast;
+  width: 100%;
+  padding: $spacing-sm 0;
+
+  .component__container,
+  .component__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .component__container {
+    justify-content: space-between;
+  }
+
+  .component__logo {
+    gap: $spacing-sm;
+  }
+
+  .component__email {
+    @include context("light");
+
+    background-color: $context-main;
+    color: $context-contrast;
+    padding: $spacing-xs;
+    border-radius: $borderRadius-md;
+  }
+
+  .component__image {
+    width: rem(40);
+    border-radius: $borderRadius-md;
+    overflow: hidden;
+  }
+}
+
+:export {
+  breakpoint-tablet: $breakpoint-tablet;
+}

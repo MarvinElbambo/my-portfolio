@@ -2,8 +2,8 @@
 
 :root {
   // base
-  --context-main: #{$palette-primary};
-  --context-contrast: #{$palette-white};
+  --context-main: #{$palette-light};
+  --context-contrast: #{$palette-black};
 
   // primary
   --context-primary-main: #{$palette-primary};

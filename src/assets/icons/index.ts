@@ -4,3 +4,4 @@ export { default as ChevronLeft } from "./chevron-left.svg";
 export { default as ChevronRight } from "./chevron-right.svg";
 export { default as BurgerMenu } from "./burger-menu.svg";
 export { default as Close } from "./close.svg";
+export { default as Email } from "./email.svg";
