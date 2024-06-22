@@ -44,7 +44,7 @@ const Footer = ({}: FooterProps) => {
                 <Typography
                   tag="p"
                   tagStyle="bodyMedium"
-                  text="Email: marvinelbambo@gmail.com"
+                  text="Email: marvinelbambo99@gmail.com"
                 />
               </a>
             </div>
@@ -102,7 +102,7 @@ const Footer = ({}: FooterProps) => {
                 <Icon name="LinkedIn" />
               </a>
 
-              <a href="mailto:marvinelbambo@gmail.com" target="_blank">
+              <a href="mailto:marvinelbambo99@gmail.com" target="_blank">
                 <Icon name="Gmail" />
               </a>
             </div>
