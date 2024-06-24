@@ -39,7 +39,7 @@ const Footer = ({}: FooterProps) => {
 
               <a
                 className={styles["component__link"]}
-                href="mailto:marvinelbambo@gmail.com"
+                href="mailto:marvinelbambo99@gmail.com"
               >
                 <Typography
                   tag="p"
