@@ -20,7 +20,7 @@ const Footer = ({}: FooterProps) => {
               text="Contact"
             />
 
-            <div className={styles["component__content"]}>
+            <address className={styles["component__content"]}>
               <a className={styles["component__link"]} href="tel:+639270763354">
                 <Typography
                   tag="p"
@@ -47,7 +47,7 @@ const Footer = ({}: FooterProps) => {
                   text="Email: marvinelbambo99@gmail.com"
                 />
               </a>
-            </div>
+            </address>
           </Column>
 
           <Column className={styles["component__column"]} width={{ tablet: 4 }}>
@@ -58,7 +58,7 @@ const Footer = ({}: FooterProps) => {
               text="Address"
             />
 
-            <div className={styles["component__content"]}>
+            <address className={styles["component__content"]}>
               <Typography
                 tag="p"
                 tagStyle="bodyMedium"
@@ -76,7 +76,7 @@ const Footer = ({}: FooterProps) => {
                 tagStyle="bodyMedium"
                 text="Pampanga, Philippines"
               />
-            </div>
+            </address>
           </Column>
 
           <Column className={styles["component__column"]} width={{ tablet: 4 }}>
